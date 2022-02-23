@@ -180,6 +180,15 @@ class _NortePageState extends State<NortePage> {
                 ),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset('assets/images/norte.png'),
+                ],
+              ),
+            )
           ],
         ),
       ),

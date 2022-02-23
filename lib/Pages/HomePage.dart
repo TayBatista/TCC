@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:viajabr_tcc/Pages/NortePage.dart';
 import 'package:viajabr_tcc/components/meu_appbar.dart';
+import 'NordestePage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -63,7 +64,10 @@ class _HomePageState extends State<HomePage> {
                         fontSize: 24,
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => NordestePage()));
+                    },
                     child: Text('Nordeste'),
                   ),
                 ],
