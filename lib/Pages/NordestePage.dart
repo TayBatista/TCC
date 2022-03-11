@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:viajabr_tcc/Pages/NordesteOptionPage.dart';
 import 'package:viajabr_tcc/components/meu_appbar.dart';
 
 class NordestePage extends StatefulWidget {
@@ -65,7 +66,10 @@ class _NordestePageState extends State<NordestePage> {
                       fontSize: 28,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => NordesteOptionPage()));
+                  },
                   child: Text('Alagoas (AL)'),
                 ),
               ),
