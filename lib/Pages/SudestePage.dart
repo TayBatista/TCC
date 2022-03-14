@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/components/meu_appbar.dart';
+import '../components/meu_appbar.dart';
 
-class NortePage extends StatefulWidget {
-  const NortePage({Key? key}) : super(key: key);
+class SudestePage extends StatefulWidget {
+  const SudestePage({Key? key}) : super(key: key);
 
   @override
-  _NortePageState createState() => _NortePageState();
+  _SudestePageState createState() => _SudestePageState();
 }
 
-class _NortePageState extends State<NortePage> {
+class _SudestePageState extends State<SudestePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _NortePageState extends State<NortePage> {
                 width: 300,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.green,
+                  color: Colors.redAccent,
                   border: Border.all(
                     color: Colors.white,
                     width: 2,
@@ -41,7 +41,7 @@ class _NortePageState extends State<NortePage> {
                 ),
                 child: const Center(
                   child: Text(
-                    "Norte",
+                    "Sudeste",
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
@@ -68,7 +68,7 @@ class _NortePageState extends State<NortePage> {
                     ),
                   ),
                   onPressed: () {},
-                  child: const Text('Acre (AC)'),
+                  child: const Text('Espírito Santo (ES)'),
                 ),
               ),
             ),
@@ -90,7 +90,7 @@ class _NortePageState extends State<NortePage> {
                     ),
                   ),
                   onPressed: () {},
-                  child: const Text('Amapá (AP)'),
+                  child: const Text('Minas Gerais (MG)'),
                 ),
               ),
             ),
@@ -112,7 +112,7 @@ class _NortePageState extends State<NortePage> {
                     ),
                   ),
                   onPressed: () {},
-                  child: const Text('Pará (PA)'),
+                  child: const Text('Rio de Janeiro (RJ)'),
                 ),
               ),
             ),
@@ -134,51 +134,7 @@ class _NortePageState extends State<NortePage> {
                     ),
                   ),
                   onPressed: () {},
-                  child: const Text('Rondônia (RO)'),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Center(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.all(8.0),
-                    minimumSize: const Size(300, 20),
-                    primary: Colors.white,
-                    onPrimary: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: const BorderSide(color: Colors.black),
-                    ),
-                    textStyle: const TextStyle(
-                      fontSize: 28,
-                    ),
-                  ),
-                  onPressed: () {},
-                  child: const Text('Roraima (RR)'),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Center(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.all(8.0),
-                    minimumSize: const Size(300, 20),
-                    primary: Colors.white,
-                    onPrimary: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: const BorderSide(color: Colors.black),
-                    ),
-                    textStyle: const TextStyle(
-                      fontSize: 28,
-                    ),
-                  ),
-                  onPressed: () {},
-                  child: const Text('Tocantins (TO)'),
+                  child: const Text('São Paulo (SP)'),
                 ),
               ),
             ),
@@ -187,10 +143,10 @@ class _NortePageState extends State<NortePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/norte.png'),
+                  Image.asset('assets/images/sudeste3.jpg'),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:viajabr_tcc/Pages/NortePage.dart';
 import 'package:viajabr_tcc/components/meu_appbar.dart';
+import 'Centro_Oeste.dart';
 import 'NordestePage.dart';
+import 'SudestePage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,130 +17,136 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: MeuAppBar(),
+      appBar: const MeuAppBar(),
       body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(0, 16, 0, 16),
+        padding: const EdgeInsets.fromLTRB(0, 16, 0, 16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
+            const Center(
               child: Text(
                 'Escolha uma Região:',
                 style: TextStyle(fontSize: 32),
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15.0, 30.0, 15.0, 10.0),
+              padding: const EdgeInsets.fromLTRB(15.0, 30.0, 15.0, 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.all(10.0),
-                      minimumSize: Size(170.0, 30.0),
+                      padding: const EdgeInsets.all(10.0),
+                      minimumSize: const Size(170.0, 30.0),
                       primary: Colors.green,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      textStyle: TextStyle(
-                        fontSize: 24,
+                      textStyle: const TextStyle(
+                        fontSize: 26,
                       ),
                     ),
                     onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => NortePage()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const NortePage()));
                     },
-                    child: Text('Norte'),
+                    child: const Text('Norte'),
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.all(10.0),
-                      minimumSize: Size(170.0, 30.0),
+                      padding: const EdgeInsets.all(10.0),
+                      minimumSize: const Size(170.0, 30.0),
                       primary: Colors.orangeAccent,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      textStyle: TextStyle(
-                        fontSize: 24,
+                      textStyle: const TextStyle(
+                        fontSize: 26,
                       ),
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => NordestePage()));
+                          builder: (context) => const NordestePage()));
                     },
-                    child: Text('Nordeste'),
+                    child: const Text('Nordeste'),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
+              padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.all(10.0),
-                      minimumSize: Size(170.0, 30.0),
+                      padding: const EdgeInsets.all(10.0),
+                      minimumSize: const Size(170.0, 30.0),
                       primary: Colors.yellow,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      textStyle: TextStyle(
-                        fontSize: 24,
+                      textStyle: const TextStyle(
+                        fontSize: 26,
                       ),
                     ),
-                    onPressed: () {},
-                    child: Text('Centro-Oeste'),
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const CentroOestePage()));
+                    },
+                    child: const Text('Centro-Oeste'),
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.all(10.0),
-                      minimumSize: Size(170.0, 30.0),
+                      padding: const EdgeInsets.all(10.0),
+                      minimumSize: const Size(170.0, 30.0),
                       primary: Colors.redAccent,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      textStyle: TextStyle(
-                        fontSize: 24,
+                      textStyle: const TextStyle(
+                        fontSize: 26,
                       ),
                     ),
-                    onPressed: () {},
-                    child: Text('Sudeste'),
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SudestePage()));
+                    },
+                    child: const Text('Sudeste'),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
+              padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.all(10.0),
-                      minimumSize: Size(170.0, 30.0),
+                      padding: const EdgeInsets.all(10.0),
+                      minimumSize: const Size(170.0, 30.0),
                       primary: Colors.blue,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      textStyle: TextStyle(
-                        fontSize: 24,
+                      textStyle: const TextStyle(
+                        fontSize: 26,
                       ),
                     ),
                     onPressed: () {},
-                    child: Text('Sul'),
+                    child: const Text('Sul'),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
+              padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

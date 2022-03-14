@@ -7,7 +7,7 @@ class MeuAppBar extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: const Text('ViajaBR'),
-      titleTextStyle: const TextStyle(fontSize: 24),
+      titleTextStyle: const TextStyle(fontSize: 26),
       centerTitle: true,
       actions: [
         Padding(

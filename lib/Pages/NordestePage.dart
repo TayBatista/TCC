@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:viajabr_tcc/components/meu_appbar.dart';
 
 class NordestePage extends StatefulWidget {
+  const NordestePage({Key? key}) : super(key: key);
+
   @override
   _NordestePageState createState() => _NordestePageState();
 }
@@ -11,13 +13,13 @@ class _NordestePageState extends State<NordestePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: MeuAppBar(),
+      appBar: const MeuAppBar(),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Center(
                 child: Text(
                   'Escolha um Estado:',
@@ -27,7 +29,7 @@ class _NordestePageState extends State<NordestePage> {
             ),
             Center(
               child: Container(
-                padding: EdgeInsets.all(5.0),
+                padding: const EdgeInsets.all(5.0),
                 width: 300,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
@@ -37,7 +39,7 @@ class _NordestePageState extends State<NordestePage> {
                     width: 2,
                   ),
                 ),
-                child: Center(
+                child: const Center(
                   child: Text(
                     "Nordeste",
                     style: TextStyle(
@@ -53,20 +55,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Alagoas (AL)'),
+                  child: const Text('Alagoas (AL)'),
                 ),
               ),
             ),
@@ -75,20 +77,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Bahia (BA)'),
+                  child: const Text('Bahia (BA)'),
                 ),
               ),
             ),
@@ -97,20 +99,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Ceará (CE)'),
+                  child: const Text('Ceará (CE)'),
                 ),
               ),
             ),
@@ -119,20 +121,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Maranhão (MA)'),
+                  child: const Text('Maranhão (MA)'),
                 ),
               ),
             ),
@@ -141,20 +143,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Paraíba (PB)'),
+                  child: const Text('Paraíba (PB)'),
                 ),
               ),
             ),
@@ -163,20 +165,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Pernambuco (PE)'),
+                  child: const Text('Pernambuco (PE)'),
                 ),
               ),
             ),
@@ -185,20 +187,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Piauí (PI)'),
+                  child: const Text('Piauí (PI)'),
                 ),
               ),
             ),
@@ -207,20 +209,20 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Rio Grande do Norte (RN)'),
+                  child: const Text('Rio G. do Norte (RN)'),
                 ),
               ),
             ),
@@ -229,25 +231,25 @@ class _NordestePageState extends State<NordestePage> {
               child: Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8.0),
-                    minimumSize: Size(300, 20),
+                    padding: const EdgeInsets.all(8.0),
+                    minimumSize: const Size(300, 20),
                     primary: Colors.white,
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 28,
                     ),
                   ),
                   onPressed: () {},
-                  child: Text('Sergipe (SE)'),
+                  child: const Text('Sergipe (SE)'),
                 ),
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
+              padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
