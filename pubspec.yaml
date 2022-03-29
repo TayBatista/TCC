@@ -59,14 +59,10 @@ flutter:
     - assets/images/brasil2.png
     - assets/images/norte.png
     - assets/images/nordeste.png
-<<<<<<< HEAD
-    - assets/images/sudeste3.jpg
-    - assets/images/sul.png
-    - assets/images/centro_oeste.png
-    
-=======
     - assets/images/maragogi.jpg
     - assets/images/maceio.jpg
->>>>>>> 1fe4fdeb7942088029c9ad04302b512f6e16ca8f
+    - assets/images/sul2.png
+    - assets/images/sudeste3.jpg
+    - assets/images/centro_oeste.png
 
- 
+

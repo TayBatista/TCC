@@ -69,7 +69,7 @@ class _CentroOestePageState extends State<CentroOestePage> {
                     onPrimary: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
-                      side: const BorderSide(color: Colors.transparent),
+                      side: const BorderSide(color: Colors.black),
                     ),
                     textStyle: const TextStyle(
                       fontSize: 28,

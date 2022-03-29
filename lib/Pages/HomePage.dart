@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viajabr_tcc/Pages/NortePage.dart';
+import 'package:viajabr_tcc/Pages/SulPage.dart';
 import 'package:viajabr_tcc/components/meu_appbar.dart';
 import 'Centro_Oeste.dart';
 import 'NordestePage.dart';
@@ -139,7 +140,10 @@ class _HomePageState extends State<HomePage> {
                         fontSize: 26,
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SulPage()));
+                    },
                     child: const Text('Sul'),
                   ),
                 ],
