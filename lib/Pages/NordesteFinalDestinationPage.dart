@@ -22,7 +22,7 @@ class _NordesteFinalDestinationPageState
               padding: const EdgeInsets.all(8.0),
               child: Center(
                 child: Container(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   width: 300,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -32,7 +32,7 @@ class _NordesteFinalDestinationPageState
                       width: 2,
                     ),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Maragogi",
                       style: TextStyle(
@@ -44,23 +44,23 @@ class _NordesteFinalDestinationPageState
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Center(
-                child: const Text(
+            const Padding(
+              padding: EdgeInsets.fromLTRB(28, 8, 28, 8),
+              child: Center(
+                child: Text(
                   'Curiosidade',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 28,
                     color: Colors.orangeAccent,
                   ),
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.fromLTRB(28, 8, 28, 8),
+              child: Text(
                 'Maragogi é também conhecido como o caribe brasileiro',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 24,
                 ),
               ),
@@ -77,21 +77,21 @@ class _NordesteFinalDestinationPageState
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Center(
-                child: const Text(
+            const Padding(
+              padding: EdgeInsets.fromLTRB(28, 8, 28, 8),
+              child: Center(
+                child: Text(
                   'Curiosidade',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 28,
                     color: Colors.orangeAccent,
                   ),
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.fromLTRB(28, 8, 28, 8),
+              child: Text(
                 'Maragogi é também conhecido como o caribe brasileiro',
                 style: TextStyle(
                   fontSize: 24,
