@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:viajabr_tcc/Pages/NordesteFDMaceio.dart';
 import 'package:viajabr_tcc/components/meu_appbar.dart';
 import 'package:viajabr_tcc/Pages/NordesteFinalDestinationPage.dart';
 
@@ -103,8 +104,8 @@ class _NordesteOptionPageState extends State<NordesteOptionPage> {
                     ),
                   ),
                   onPressed: () {
-                   // Navigator.of(context).push(
-                   // MaterialPageRoute(builder: (context) => NordesteOptionPage()));
+                    Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => NordesteFDMaceio()));
                   },
                   child: const Text('Maceió'),
                 ),
