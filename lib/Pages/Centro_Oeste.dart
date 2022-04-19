@@ -151,7 +151,12 @@ class _CentroOestePageState extends State<CentroOestePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/centro_oeste.png'),
+                  Image.asset(
+                    'assets/images/centro_oeste.png',
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.contain,
+                  ),
                 ],
               ),
             ),

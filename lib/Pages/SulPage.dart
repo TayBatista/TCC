@@ -117,11 +117,16 @@ class _SulPageState extends State<SulPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/sul2.png'),
+                  Image.asset(
+                    'assets/images/Sul1.png',
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.contain,
+                  ),
                 ],
               ),
             ),

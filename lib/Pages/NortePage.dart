@@ -187,7 +187,12 @@ class _NortePageState extends State<NortePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/norte.png'),
+                  Image.asset(
+                    'assets/images/norte.png',
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.contain,
+                  ),
                 ],
               ),
             )

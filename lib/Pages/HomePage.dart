@@ -154,7 +154,12 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/brasil2.png'),
+                  Image.asset(
+                    'assets/images/brasil2.png',
+                    width: 350,
+                    height: 350,
+                    fit: BoxFit.contain,
+                  ),
                 ],
               ),
             )

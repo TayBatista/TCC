@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Pages/LoginPage.dart';
 
 class MeuAppBar extends StatelessWidget with PreferredSizeWidget {
   const MeuAppBar({Key? key}) : super(key: key);
@@ -18,6 +19,17 @@ class MeuAppBar extends StatelessWidget with PreferredSizeWidget {
             onPressed: () {},
           ),
         ),
+        PopupMenuButton<int>(
+          icon: const Icon(Icons.menu),
+          iconSize: 30,
+          onSelected: (item) => onSelected(context, item),
+          itemBuilder: (context) => [
+            const PopupMenuItem<int>(
+              value: 0,
+              child: Text('Login'),
+            ),
+          ],
+        ),
       ],
       flexibleSpace: Container(
         decoration: const BoxDecoration(
@@ -34,4 +46,14 @@ class MeuAppBar extends StatelessWidget with PreferredSizeWidget {
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+}
+
+void onSelected(BuildContext context, int item) {
+  switch (item) {
+    case 0:
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (context) => const login()),
+      );
+      break;
+  }
 }

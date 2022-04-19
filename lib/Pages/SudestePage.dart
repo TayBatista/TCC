@@ -143,7 +143,12 @@ class _SudestePageState extends State<SudestePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/sudeste3.jpg'),
+                  Image.asset(
+                    'assets/images/sudeste3.jpg',
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.contain,
+                  ),
                 ],
               ),
             ),

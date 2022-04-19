@@ -69,8 +69,8 @@ class _NordestePageState extends State<NordestePage> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const NordesteOptionPage()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const NordesteOptionPage()));
                   },
                   child: const Text('Alagoas (AL)'),
                 ),
@@ -257,7 +257,12 @@ class _NordestePageState extends State<NordestePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/nordeste.png'),
+                  Image.asset(
+                    'assets/images/nordeste.png',
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.contain,
+                  ),
                 ],
               ),
             )
