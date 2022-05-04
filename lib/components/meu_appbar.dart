@@ -26,7 +26,8 @@ class MeuAppBar extends StatelessWidget with PreferredSizeWidget {
           itemBuilder: (context) => [
             const PopupMenuItem<int>(
               value: 0,
-              child: Text('Login'),
+              child: Text('Criar itinerário'),
+              textStyle: TextStyle(fontSize: 20, color: Colors.black),
             ),
           ],
         ),
