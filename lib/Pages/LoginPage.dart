@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:viajabr_tcc/Pages/Itinerario.dart';
 import '../components/meu_appbar.dart';
 
 class login extends StatefulWidget {
@@ -55,8 +56,10 @@ class _loginState extends State<login> {
               const Divider(),
               ElevatedButton(
                 onPressed: () => {
-                  // ignore: avoid_print
-                  print("Pressione o botão"),
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) => const ItinerarioPage()),
+                  )
                 },
                 child: const Text(
                   "Entrar",
