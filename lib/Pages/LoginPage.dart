@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viajabr_tcc/Pages/Itinerario.dart';
+import 'package:viajabr_tcc/Pages/PageUsuario.dart';
 import '../components/meu_appbar.dart';
 
 class login extends StatefulWidget {
@@ -32,7 +33,7 @@ class _loginState extends State<login> {
                   labelText: "Login",
                   labelStyle: const TextStyle(color: Colors.black),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
+                    borderSide: const BorderSide(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
@@ -48,7 +49,7 @@ class _loginState extends State<login> {
                   labelText: "Senha",
                   labelStyle: const TextStyle(color: Colors.black),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
+                    borderSide: const BorderSide(color: Colors.black),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
@@ -69,7 +70,42 @@ class _loginState extends State<login> {
                   primary: Colors.red,
                   onPrimary: Colors.white,
                 ),
-              )
+              ),
+              ElevatedButton(
+                onPressed: () => {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) => const CriaUsuario()),
+                  ),
+                },
+                child: const Text(
+                  "É novo por aqui? Cadastre-se!",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      decoration: TextDecoration.underline),
+                ),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                  onPrimary: Colors.white,
+                  shadowColor: Colors.white,
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () => {},
+                child: const Text(
+                  "Redefinir senha",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      decoration: TextDecoration.underline),
+                ),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                  onPrimary: Colors.white,
+                  shadowColor: Colors.white,
+                ),
+              ),
             ],
           ),
         ),
