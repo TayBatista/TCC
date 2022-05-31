@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
-import '../components/meu_appbar.dart';
+import '../components/ViajaBrAppBar.dart';
 
 class ItineraryPage extends StatefulWidget {
   const ItineraryPage({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class _ItineraryPageState extends State<ItineraryPage> {
   Widget build(final BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.white,
-      appBar: MeuAppBar(),
+      appBar: ViajaBrAppBar(),
     );
   }
 }

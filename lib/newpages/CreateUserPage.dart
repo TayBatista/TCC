@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:viajabr_tcc/components/InputText.dart';
 import 'package:viajabr_tcc/components/RedrectionButton.dart';
 import 'package:viajabr_tcc/newpages/LoginPage.dart';
-import '../components/meu_appbar.dart';
+import '../components/ViajaBrAppBar.dart';
 
 class CreateUserPage extends StatefulWidget {
   const CreateUserPage({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class _CreateUserPageState extends State<CreateUserPage> {
   Widget build(final BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const MeuAppBar(),
+      appBar: const ViajaBrAppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16),

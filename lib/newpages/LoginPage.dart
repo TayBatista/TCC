@@ -6,7 +6,7 @@ import 'package:viajabr_tcc/components/LinkLikeButton.dart';
 import 'package:viajabr_tcc/components/RedrectionButton.dart';
 import 'package:viajabr_tcc/newpages/CreateUserPage.dart';
 import 'package:viajabr_tcc/newpages/ItineraryPage.dart';
-import '../components/meu_appbar.dart';
+import '../components/ViajaBrAppBar.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _loginState extends State<LoginPage> {
   Widget build(final BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const MeuAppBar(),
+      appBar: const ViajaBrAppBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
