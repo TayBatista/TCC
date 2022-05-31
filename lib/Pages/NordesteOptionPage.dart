@@ -11,8 +11,8 @@ class NordesteOptionPage extends StatefulWidget {
 }
 
 class _NordesteOptionPageState extends State<NordesteOptionPage> {
-    @override
-  Widget build(BuildContext context) {  
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: const MeuAppBar(),
@@ -20,7 +20,7 @@ class _NordesteOptionPageState extends State<NordesteOptionPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-             const Padding(
+            const Padding(
               padding: EdgeInsets.all(16.0),
               child: Center(
                 child: Text(
@@ -43,7 +43,7 @@ class _NordesteOptionPageState extends State<NordesteOptionPage> {
                 ),
                 child: const Center(
                   child: Text(
-                    "Nordeste",
+                    "Alagoas:",
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
@@ -70,23 +70,26 @@ class _NordesteOptionPageState extends State<NordesteOptionPage> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => NordesteFinalDestinationPage()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => NordesteFinalDestinationPage()));
                   },
                   child: const Text('Praia de Maragogi'),
                 ),
               ),
             ),
-              Padding(
+            Padding(
               padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/maragogi.jpg', width: 300,),
+                  Image.asset(
+                    'assets/images/maragogi.jpg',
+                    width: 300,
+                  ),
                 ],
               ),
             ),
-          Padding(
+            Padding(
               padding: const EdgeInsets.all(8.0),
               child: Center(
                 child: ElevatedButton(
@@ -104,8 +107,8 @@ class _NordesteOptionPageState extends State<NordesteOptionPage> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => NordesteFDMaceio()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => NordesteFDMaceio()));
                   },
                   child: const Text('Maceió'),
                 ),
@@ -116,7 +119,10 @@ class _NordesteOptionPageState extends State<NordesteOptionPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/maceio.jpg', width: 300,),
+                  Image.asset(
+                    'assets/images/maceio.jpg',
+                    width: 300,
+                  ),
                 ],
               ),
             ),
