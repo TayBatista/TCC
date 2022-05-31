@@ -36,7 +36,7 @@ class _CentroOestePageState extends State<CentroOestePage> {
                     BoxShadow(
                       color: Colors.black,
                       offset: Offset.zero,
-                      blurStyle: BlurStyle.normal,
+                      //blurStyle: BlurStyle.normal,
                       blurRadius: 4.0,
                       spreadRadius: 0.0,
                     ),

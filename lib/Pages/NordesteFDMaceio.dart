@@ -63,7 +63,7 @@ class _NordesteFDMaceio
             Padding(
               padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
               child: const Text(
-                'Cidade histórica alagoana onde nasceu Marechal Deodoro da Fonseca (o primeiro presidente do Brasil). Fundada em 1591, passou a ser a capital alagoana em 1817 e só foi considerada uma cidade em 1823.\nFoi considerada Patrimonio Histórico pelo Ministério da Cultura em 2006).\nÉ uma boa escolha para os amantes de arquitetura e a história da cultura brasileira.',
+                'Cidade histórica alagoana onde nasceu Marechal Deodoro da Fonseca (o primeiro presidente do Brasil). Fundada em 1591, passou a ser a capital alagoana em 1817 e só foi considerada uma cidade em 1823.\nFoi considerada Patrimonio Histórico pelo Ministério da Cultura em 2006.\nÉ uma boa escolha para os amantes de arquitetura e a história da cultura brasileira.',
                 style: const TextStyle(
                   fontSize: 24,
                 ),
@@ -95,28 +95,48 @@ class _NordesteFDMaceio
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
-                'Igreja Santa Maria Madalena: Esta igreja tem o estilo rococó e foi contruida entre os séculos XVI e XVII. Além de possuir uma faixada fantástica, seu interior também é lindo e guarda uma imagem rara de Jesus dos Escolhidos.',
-                style: TextStyle(
-                  fontSize: 24,
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(fontSize: 24, color: Colors.black),
+                  children: <TextSpan>[
+                    TextSpan(
+                        text: 'Igreja Santa Maria Madalena:',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                        text:
+                            ' Esta igreja tem o estilo rococó e foi contruida entre os séculos XVI e XVII. Além de possuir uma faixada fantástica, seu interior também é lindo e guarda uma imagem rara de Jesus dos Escolhidos.'),
+                  ],
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
-                'R. Dr. Melo Morães, 1-117 - Vila Santa Maria Madalena, Mal. Deodoro - AL, 57160-000',
-                style: TextStyle(
-                  fontSize: 24,
-                ),
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(fontSize:24, color : Colors.black),
+                  children: <TextSpan>[
+                    TextSpan(
+                  text: 'Localização:',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(
+                  text: ' R. Dr. Melo Morães, 1-117 - Vila Santa Maria Madalena, Mal. Deodoro - AL, 57160-000'),
+                  ],
+               ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
-                'Preço: Grátis.',
-                style: TextStyle(
-                  fontSize: 24,
+             padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(fontSize: 24, color: Colors.black),
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: 'Preço:',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                      text: ' Grátis',
+                    ),
+                ],
                 ),
               ),
             ),

@@ -95,28 +95,48 @@ class _NordesteFinalDestinationPageState
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
-                'Praia de Antunes: Escolhida por milhares de turistas, esta praia possui mar calmo e quando a maré esta baixa oferece visão privilegiada dos corais.',
-                style: TextStyle(
-                  fontSize: 24,
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(fontSize: 24, color: Colors.black),
+                  children: <TextSpan>[
+                    TextSpan(
+                        text: 'Praia de Antunes:',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                        text:
+                            ' Escolhida por milhares de turistas, esta praia possui mar calmo e quando a maré esta baixa oferece visão privilegiada dos corais.'),
+                  ],
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
-                'Localização: Barra Grande, Maragogi - Estado de Alagoas, 57955-000.',
-                style: TextStyle(
-                  fontSize: 24,
-                ),
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(fontSize:24, color : Colors.black),
+                  children: <TextSpan>[
+                    TextSpan(
+                  text: 'Localização:',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(
+                  text: ' Barra Grande, Maragogi - Estado de Alagoas, 57955-000.'),
+                  ],
+               ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(28, 8, 28, 8),
-              child: const Text(
-                'Preço: Grátis.',
-                style: TextStyle(
-                  fontSize: 24,
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(fontSize: 24, color: Colors.black),
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: 'Preço:',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                      text: ' Grátis',
+                    ),
+                ],
                 ),
               ),
             ),
