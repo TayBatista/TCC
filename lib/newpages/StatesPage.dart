@@ -1,6 +1,7 @@
 // ignore_for_file: lowercase_with_underscores, unnecessary_const, file_names
 
 import 'package:flutter/material.dart';
+import 'package:viajabr_tcc/components/Picture.dart';
 import 'package:viajabr_tcc/newpages/CitiesPage.dart';
 import 'package:viajabr_tcc/components/ButtonLike.dart';
 import 'package:viajabr_tcc/components/RedrectionButton.dart';
@@ -10,9 +11,18 @@ import 'package:viajabr_tcc/models/StateModel.dart';
 
 // NordestePage
 class StatesPage extends StatefulWidget {
-  final int regionId;
+  final int id;
+  final String title;
+  final String image;
+  final Color color;
 
-  const StatesPage({Key? key, required this.regionId}) : super(key: key);
+  const StatesPage({
+    Key? key,
+    required this.id,
+    required this.title,
+    required this.image,
+    required this.color,
+  }) : super(key: key);
 
   @override
   _StatesPageState createState() => _StatesPageState();
@@ -24,13 +34,15 @@ class _StatesPageState extends State<StatesPage> {
     List<StateModel> states = loadData();
 
     final List<Widget> widgets = [];
-    widgets.add(const ButtonLike(title: "Nordeste"));
+    widgets.add(ButtonLike(title: widget.title, color: widget.color));
     widgets.add(
         const TitleField(title: 'Escolha um Estado:', color: Colors.black));
     for (var state in states) {
       widgets.add(RedrectionButton(
-          text: state.name, nextPage: CitiesPage(state: state)));
+          text: state.name,
+          nextPage: CitiesPage(state: state, color: widget.color)));
     }
+    widgets.add(Picture(path: widget.image));
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: const ViajaBrAppBar(),
@@ -44,7 +56,7 @@ class _StatesPageState extends State<StatesPage> {
   }
 
   List<StateModel> loadData() {
-     debugPrint(widget.regionId.toString()); // TODO
+    debugPrint(widget.id.toString()); // TODO
     final List<StateModel> states = [];
     states.add(StateModel(regionId: 1, id: 1, name: 'Alagoas (AL)'));
     states.add(StateModel(regionId: 1, id: 2, name: 'Bahia (BA)'));

@@ -13,8 +13,10 @@ import 'package:viajabr_tcc/models/TuristModel.dart';
 
 class TouristPage extends StatefulWidget {
   final CityModel city;
+  final Color color;
 
-  const TouristPage({Key? key, required this.city}) : super(key: key);
+  const TouristPage({Key? key, required this.city, required this.color})
+      : super(key: key);
 
   @override
   _TouristPageState createState() => _TouristPageState();
@@ -26,7 +28,7 @@ class _TouristPageState extends State<TouristPage> {
     final List<TuristModel> turists = loadData();
 
     final List<Widget> widgets = [];
-    widgets.add(ButtonLike(title: widget.city.name));
+    widgets.add(ButtonLike(title: widget.city.name, color: widget.color));
     for (var turist in turists) {
       addTurist(widgets, turist);
     }

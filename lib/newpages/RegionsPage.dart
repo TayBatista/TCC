@@ -34,11 +34,19 @@ class _RegionsPageState extends State<RegionsPage> {
                   children: const [
                     RegionButton(
                         text: 'Norte',
-                        nextPage: StatesPage(regionId: 1),
+                        nextPage: StatesPage(
+                            id: 1,
+                            title: 'Norte',
+                            image: 'assets/images/norte.png',
+                            color: Colors.green),
                         color: Colors.green),
                     RegionButton(
                         text: 'Nordeste',
-                        nextPage: StatesPage(regionId: 2),
+                        nextPage: StatesPage(
+                            id: 2,
+                            title: 'Nordeste',
+                            image: 'assets/images/nordeste.png',
+                            color: Colors.orangeAccent),
                         color: Colors.orangeAccent),
                   ],
                 )),
@@ -49,11 +57,19 @@ class _RegionsPageState extends State<RegionsPage> {
                   children: const [
                     RegionButton(
                         text: 'Centro-Oeste',
-                        nextPage: StatesPage(regionId: 3),
+                        nextPage: StatesPage(
+                            id: 3,
+                            title: 'Centro-Oeste',
+                            image: 'assets/images/centro_oeste.png',
+                            color: Colors.yellow),
                         color: Colors.yellow),
                     RegionButton(
                         text: 'Suldeste',
-                        nextPage: StatesPage(regionId: 4),
+                        nextPage: StatesPage(
+                            id: 4,
+                            title: 'Suldeste',
+                            image: 'assets/images/sudeste3.jpg',
+                            color: Colors.redAccent),
                         color: Colors.redAccent),
                   ],
                 )),
@@ -61,7 +77,11 @@ class _RegionsPageState extends State<RegionsPage> {
                 padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
                 child: const RegionButton(
                     text: 'Sul',
-                    nextPage: StatesPage(regionId: 5),
+                    nextPage: StatesPage(
+                        id: 5,
+                        title: 'Sul',
+                        image: 'assets/images/Sul1.png',
+                        color: Colors.blue),
                     color: Colors.blue)),
             const Picture(path: 'assets/images/brasil2.png'),
           ],

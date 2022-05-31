@@ -12,8 +12,10 @@ import 'package:viajabr_tcc/models/StateModel.dart';
 
 class CitiesPage extends StatefulWidget {
   final StateModel state;
+  final Color color;
 
-  const CitiesPage({Key? key, required this.state}) : super(key: key);
+  const CitiesPage({Key? key, required this.state, required this.color})
+      : super(key: key);
 
   @override
   _CitiesPageState createState() => _CitiesPageState();
@@ -23,7 +25,7 @@ class _CitiesPageState extends State<CitiesPage> {
   @override
   Widget build(final BuildContext context) {
     final List<Widget> widgets = [];
-    widgets.add(const ButtonLike(title: "Alagoas (AL)"));
+    widgets.add(ButtonLike(title: "Alagoas (AL)", color: widget.color));
     widgets.add(
         const TitleField(title: 'Escolha um Destino:', color: Colors.black));
 
@@ -44,8 +46,9 @@ class _CitiesPageState extends State<CitiesPage> {
   }
 
   void addCity(final List<Widget> widgets, CityModel city) {
-    widgets.add(
-        RedrectionButton(text: city.name, nextPage: TouristPage(city: city)));
+    widgets.add(RedrectionButton(
+        text: city.name,
+        nextPage: TouristPage(city: city, color: widget.color)));
     widgets.add(Picture(path: city.image));
   }
 

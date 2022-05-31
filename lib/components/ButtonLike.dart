@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 
 class ButtonLike extends StatelessWidget {
   final String title;
-  final Color? color;
+  final Color color;
 
-  const ButtonLike({Key? key, required this.title, this.color})
+  const ButtonLike({Key? key, required this.title, required this.color})
       : super(key: key);
 
   @override
@@ -19,7 +19,7 @@ class ButtonLike extends StatelessWidget {
           width: 300,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: color ?? Colors.orangeAccent,
+            color: color,
             border: Border.all(
               color: Colors.white,
               width: 2,
