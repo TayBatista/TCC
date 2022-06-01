@@ -12,9 +12,19 @@ class ItinerarioPage extends StatefulWidget {
 class _ItinerarioPageState extends State<ItinerarioPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.white,
-      appBar: MeuAppBar(),
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: const MeuAppBar(),
+      body: ListView(
+        children: [
+          Card(
+            child: ListTile(
+              title: Text('Norte'),
+              onTap: () {},
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

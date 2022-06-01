@@ -16,7 +16,7 @@ class Picture extends StatelessWidget {
         children: [
           Image.asset(
             path,
-            width: 300,
+            width: MediaQuery.of(context).size.width * 0.9,
           ),
         ],
       ),

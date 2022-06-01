@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       textStyle: const TextStyle(
-                        fontSize: 26,
+                        fontSize: 32,
                       ),
                     ),
                     onPressed: () {
@@ -156,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Image.asset(
                     'assets/images/brasil2.png',
-                    width: 350,
+                    width: MediaQuery.of(context).size.width,
                     height: 350,
                     fit: BoxFit.contain,
                   ),

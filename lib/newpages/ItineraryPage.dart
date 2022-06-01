@@ -12,9 +12,36 @@ class ItineraryPage extends StatefulWidget {
 class _ItineraryPageState extends State<ItineraryPage> {
   @override
   Widget build(final BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
-      appBar: ViajaBrAppBar(),
+      appBar: const ViajaBrAppBar(),
+      body: ListView(
+        children: [
+          Padding(
+            padding: EdgeInsets.fromLTRB(8, 20, 8, 10),
+            child: Card(
+              child: ListTile(
+                title: Text('Itinerário', style: TextStyle(fontSize: 25)),
+                subtitle: Text('Aqui você pode ver o seu itinerário',
+                    style: TextStyle(fontSize: 20)),
+              ),
+              elevation: 3,
+              color: Color.fromARGB(255, 236, 209, 241),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(8, 10, 8, 20),
+            child: Card(
+              child: ListTile(
+                title: Text('Itinerário', style: TextStyle(fontSize: 25)),
+                subtitle: Text('', style: TextStyle(fontSize: 20)),
+              ),
+              elevation: 3,
+              color: Color.fromARGB(255, 236, 209, 241),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

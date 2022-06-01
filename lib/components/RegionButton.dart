@@ -19,14 +19,14 @@ class RegionButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.all(10.0),
-        minimumSize: const Size(155, 30),
+        minimumSize: const Size(170, 30),
         primary: color,
         onPrimary: Colors.black,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
         textStyle: const TextStyle(
-          fontSize: 22,
+          fontSize: 26,
         ),
       ),
       onPressed: () {

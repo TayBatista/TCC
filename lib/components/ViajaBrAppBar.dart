@@ -9,7 +9,7 @@ class ViajaBrAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('ViajaBR (NEW)'),
+      title: const Text('ViajaBR'),
       titleTextStyle: const TextStyle(fontSize: 26),
       centerTitle: true,
       actions: [
