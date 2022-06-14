@@ -1,10 +1,8 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
-import '../newpages/LoginPage.dart';
+import 'package:viajabr_tcc/Pages/HomePage.dart';
 
-class ViajaBrAppBar extends StatelessWidget with PreferredSizeWidget {
-  const ViajaBrAppBar({Key? key}) : super(key: key);
+class MeuAppBar1 extends StatelessWidget with PreferredSizeWidget {
+  const MeuAppBar1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,23 +13,18 @@ class ViajaBrAppBar extends StatelessWidget with PreferredSizeWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: IconButton(
+          child: PopupMenuButton<int>(
+            icon: const Icon(Icons.menu),
             iconSize: 30,
-            icon: const Icon(Icons.search),
-            onPressed: () {},
+            onSelected: (item) => onSelected(context, item),
+            itemBuilder: (context) => [
+              const PopupMenuItem<int>(
+                value: 0,
+                child: Text('Sair'),
+                textStyle: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ],
           ),
-        ),
-        PopupMenuButton<int>(
-          icon: const Icon(Icons.menu),
-          iconSize: 30,
-          onSelected: (item) => onSelected(context, item),
-          itemBuilder: (context) => [
-            const PopupMenuItem<int>(
-              value: 0,
-              child: Text('Criar itinerário'),
-              textStyle: TextStyle(fontSize: 20, color: Colors.black),
-            ),
-          ],
         ),
       ],
       flexibleSpace: Container(
@@ -54,9 +47,9 @@ class ViajaBrAppBar extends StatelessWidget with PreferredSizeWidget {
 void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
-      Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => const LoginPage()),
-      );
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => HomePage()),
+          (Route<dynamic> route) => false);
       break;
   }
 }

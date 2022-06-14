@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/newpages/RegionsPage.dart';
-// import 'package:viajabr_tcc/Pages/HomePage.dart'; // Tela sem refatorar
+import 'package:viajabr_tcc/Pages/HomePage.dart';
 
 void main() {
   runApp(const ViajaBR());
@@ -15,8 +14,7 @@ class ViajaBR extends StatelessWidget {
       title: 'Aplicativo de turismo',
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData.dark(),
-      home: const RegionsPage(),
-     // home: const HomePage(),
+      home: const HomePage(),
     );
   }
 }

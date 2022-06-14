@@ -14,9 +14,11 @@ class login extends StatefulWidget {
 class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
+    var email;
+    var senha;
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const MeuAppBar(),
+      appBar: MeuAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Center(
@@ -25,12 +27,15 @@ class _loginState extends State<login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextField(
+                onChanged: (text) {
+                  email = text;
+                },
                 cursorColor: Colors.black,
                 autofocus: true,
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.emailAddress,
                 style: const TextStyle(color: Colors.black, fontSize: 30),
                 decoration: InputDecoration(
-                  labelText: "Login",
+                  labelText: "E-mail",
                   labelStyle: const TextStyle(color: Colors.black),
                   focusedBorder: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.black),
@@ -40,6 +45,9 @@ class _loginState extends State<login> {
               ),
               const Divider(),
               TextField(
+                onChanged: (text) {
+                  senha = text;
+                },
                 cursorColor: Colors.black,
                 autofocus: true,
                 obscureText: true,
@@ -57,10 +65,32 @@ class _loginState extends State<login> {
               const Divider(),
               ElevatedButton(
                 onPressed: () => {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                        builder: (context) => const ItinerarioPage()),
-                  )
+                  if (email == 'teste@gmail.com' && senha == '123')
+                    {
+                      Navigator.of(context).pushAndRemoveUntil(
+                          MaterialPageRoute(
+                              builder: (context) => ItinerarioPage()),
+                          (Route<dynamic> route) => false),
+                    }
+                  else
+                    {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text("E-mail ou senha incorretos"),
+                            actions: [
+                              TextButton(
+                                child: Text("OK"),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      ),
+                    },
                 },
                 child: const Text(
                   "Entrar",
@@ -80,21 +110,6 @@ class _loginState extends State<login> {
                 },
                 child: const Text(
                   "É novo por aqui? Cadastre-se!",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      decoration: TextDecoration.underline),
-                ),
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.white,
-                  onPrimary: Colors.white,
-                  shadowColor: Colors.white,
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () => {},
-                child: const Text(
-                  "Redefinir senha",
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 24,

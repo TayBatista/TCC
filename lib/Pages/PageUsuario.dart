@@ -1,5 +1,3 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
 import 'package:viajabr_tcc/Pages/LoginPage.dart';
 import '../components/meu_appbar.dart';
@@ -100,9 +98,26 @@ class _CriaUsuarioState extends State<CriaUsuario> {
                 padding: const EdgeInsets.all(16.0),
                 child: ElevatedButton(
                   onPressed: () => {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => const login()),
-                    )
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text("Usuário cadastrado com sucesso!"),
+                          actions: [
+                            TextButton(
+                              child: Text("OK"),
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (BuildContext context) => login(),
+                                  ),
+                                );
+                              },
+                            ),
+                          ],
+                        );
+                      },
+                    ),
                   },
                   child: const Text(
                     "Cadastrar",

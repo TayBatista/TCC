@@ -13,23 +13,18 @@ class MeuAppBar extends StatelessWidget with PreferredSizeWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: IconButton(
+          child: PopupMenuButton<int>(
+            icon: const Icon(Icons.menu),
             iconSize: 30,
-            icon: const Icon(Icons.search),
-            onPressed: () {},
+            onSelected: (item) => onSelected(context, item),
+            itemBuilder: (context) => [
+              const PopupMenuItem<int>(
+                value: 0,
+                child: Text('Criar itinerário'),
+                textStyle: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ],
           ),
-        ),
-        PopupMenuButton<int>(
-          icon: const Icon(Icons.menu),
-          iconSize: 30,
-          onSelected: (item) => onSelected(context, item),
-          itemBuilder: (context) => [
-            const PopupMenuItem<int>(
-              value: 0,
-              child: Text('Criar itinerário'),
-              textStyle: TextStyle(fontSize: 20, color: Colors.black),
-            ),
-          ],
         ),
       ],
       flexibleSpace: Container(
