@@ -1,6 +1,7 @@
+import 'package:Viajabr/components/meu_appbar.dart';
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/Pages/LoginPage.dart';
-import '../components/meu_appbar.dart';
+import 'package:Viajabr/Pages/LoginPage.dart';
+
 
 class CriaUsuario extends StatefulWidget {
   const CriaUsuario({Key? key}) : super(key: key);

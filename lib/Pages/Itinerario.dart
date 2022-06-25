@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/components/appbar_itinerario.dart';
+import 'package:Viajabr/components/appbar_itinerario.dart';
 
 class ItinerarioPage extends StatefulWidget {
   const ItinerarioPage({Key? key}) : super(key: key);

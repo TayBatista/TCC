@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/Pages/NortePage.dart';
-import 'package:viajabr_tcc/Pages/SulPage.dart';
-import 'package:viajabr_tcc/components/meu_appbar.dart';
+import 'package:Viajabr/Pages/NortePage.dart';
+import 'package:Viajabr/Pages/SulPage.dart';
+import 'package:Viajabr/components/meu_appbar.dart';
 import 'Centro_Oeste.dart';
 import 'NordestePage.dart';
 import 'SudestePage.dart';

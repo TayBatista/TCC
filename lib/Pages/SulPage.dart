@@ -1,5 +1,6 @@
+import 'package:Viajabr/components/meu_appbar.dart';
 import 'package:flutter/material.dart';
-import '../components/meu_appbar.dart';
+
 
 class SulPage extends StatefulWidget {
   const SulPage({Key? key}) : super(key: key);

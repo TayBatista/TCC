@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/components/meu_appbar.dart';
+import 'package:Viajabr/components/meu_appbar.dart';
 
 class NortePage extends StatefulWidget {
   const NortePage({Key? key}) : super(key: key);

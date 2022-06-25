@@ -1,4 +1,4 @@
-name: viajabr_tcc
+name: Viajabr
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -45,6 +45,7 @@ flutter_icons:
   android: "splash"
   ios: true
   image_path: "assets/iconviajabr.png"
+  color: "#800080"
   remove_alpha_ios: true
 
 flutter:

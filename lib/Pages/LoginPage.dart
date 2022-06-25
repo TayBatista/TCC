@@ -1,7 +1,8 @@
+import 'package:Viajabr/components/meu_appbar.dart';
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/Pages/Itinerario.dart';
-import 'package:viajabr_tcc/Pages/PageUsuario.dart';
-import '../components/meu_appbar.dart';
+import 'package:Viajabr/Pages/Itinerario.dart';
+import 'package:Viajabr/Pages/PageUsuario.dart';
+
 
 class login extends StatefulWidget {
   const login({Key? key}) : super(key: key);

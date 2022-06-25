@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_const
 
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/components/meu_appbar.dart';
+import 'package:Viajabr/components/meu_appbar.dart';
 
 class NordesteFDMaceio extends StatefulWidget {
   const NordesteFDMaceio({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
+import 'package:Viajabr/Pages/LoginPage.dart';
 import 'package:flutter/material.dart';
-import '../Pages/LoginPage.dart';
 
 class MeuAppBar extends StatelessWidget with PreferredSizeWidget {
   const MeuAppBar({Key? key}) : super(key: key);

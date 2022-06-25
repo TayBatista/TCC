@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/Pages/NordesteOptionPage.dart';
-import 'package:viajabr_tcc/components/meu_appbar.dart';
+import 'package:Viajabr/Pages/NordesteOptionPage.dart';
+import 'package:Viajabr/components/meu_appbar.dart';
 
 class NordestePage extends StatefulWidget {
   const NordestePage({Key? key}) : super(key: key);

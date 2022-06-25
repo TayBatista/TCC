@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viajabr_tcc/Pages/HomePage.dart';
+import 'package:Viajabr/Pages/HomePage.dart';
 
 void main() {
   runApp(const ViajaBR());

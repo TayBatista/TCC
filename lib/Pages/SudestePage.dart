@@ -1,5 +1,5 @@
+import 'package:Viajabr/components/meu_appbar.dart';
 import 'package:flutter/material.dart';
-import '../components/meu_appbar.dart';
 
 class SudestePage extends StatefulWidget {
   const SudestePage({Key? key}) : super(key: key);

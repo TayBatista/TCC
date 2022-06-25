@@ -1,5 +1,6 @@
+import 'package:Viajabr/components/meu_appbar.dart';
 import 'package:flutter/material.dart';
-import '../components/meu_appbar.dart';
+
 
 class CentroOestePage extends StatefulWidget {
   const CentroOestePage({Key? key}) : super(key: key);
